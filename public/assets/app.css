@@ -1,0 +1,128 @@
+:root{
+  --bg: #f3f6fb;
+  --text: #0f172a;
+  --muted:#64748b;
+  --card:#ffffff;
+  --border:#e5e7eb;
+  --shadow: 0 10px 25px rgba(15, 23, 42, .08);
+
+  --nav:#0b1b33;        /* bleu marine */
+  --nav2:#0f2342;
+  --primary:#1d4ed8;    /* bleu pro */
+  --primary2:#1e40af;
+
+  --success:#16a34a;
+  --warning:#d97706;
+  --danger:#dc2626;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.container{ max-width: 1100px; }
+
+.app-navbar{
+  background: linear-gradient(90deg, var(--nav), var(--nav2));
+  box-shadow: 0 6px 20px rgba(2, 6, 23, .25);
+}
+
+.brand-dot{
+  width:10px;height:10px;border-radius:50%;
+  background: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96,165,250,.15);
+}
+
+.app-user-badge{
+  color: #0f172a !important;
+}
+
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.small-muted{ color: var(--muted); }
+
+a{ text-decoration:none; }
+a:hover{ text-decoration: underline; }
+
+.form-control, .form-select{
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.form-control:focus, .form-select:focus{
+  border-color: rgba(29,78,216,.55);
+  box-shadow: 0 0 0 .2rem rgba(29,78,216,.12);
+}
+
+.btn{
+  border-radius: 12px;
+}
+
+.btn-soft{
+  background: rgba(29,78,216,.10);
+  border: 1px solid rgba(29,78,216,.18);
+  color: var(--primary2);
+}
+.btn-soft:hover{
+  background: rgba(29,78,216,.14);
+  border-color: rgba(29,78,216,.25);
+  color: var(--primary2);
+}
+
+.badge-status{
+  padding: .45rem .7rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .82rem;
+}
+.badge-en_cours{
+  background: rgba(217,119,6,.12);
+  border: 1px solid rgba(217,119,6,.25);
+  color: var(--warning);
+}
+.badge-terminee{
+  background: rgba(22,163,74,.12);
+  border: 1px solid rgba(22,163,74,.22);
+  color: var(--success);
+}
+
+.table{
+  color: var(--text);
+}
+.table thead th{
+  color: #334155;
+  border-bottom: 1px solid var(--border);
+}
+.table td, .table th{
+  border-color: var(--border) !important;
+}
+
+.page-head{
+  border-radius: 18px;
+  padding: 18px 18px;
+  background: linear-gradient(90deg, rgba(29,78,216,.08), rgba(96,165,250,.08));
+  border: 1px solid rgba(29,78,216,.12);
+}
+
+.kpi{
+  display:flex; align-items:center; gap:12px;
+}
+.kpi i{
+  font-size: 1.4rem;
+  color: var(--primary2);
+  background: rgba(29,78,216,.10);
+  border: 1px solid rgba(29,78,216,.12);
+  width:44px;height:44px;border-radius: 14px;
+  display:grid;place-items:center;
+}
+.kpi .value{
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
