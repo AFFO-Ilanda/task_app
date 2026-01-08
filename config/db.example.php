@@ -4,7 +4,7 @@ declare(strict_types=1);
 $DB_HOST = 'localhost';
 $DB_NAME = 'task_app';
 $DB_USER = 'root';
-$DB_PASS = ''; // XAMPP Mac: souvent vide
+$DB_PASS = ''; 
 
 $dsn = "mysql:host={$DB_HOST};dbname={$DB_NAME};charset=utf8mb4";
 $options = [
